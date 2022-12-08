@@ -5,3 +5,4 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 ⏬
 
 ### ***Please carefully read [LICENSE.md](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/LICENSE) about the Open Source restrictions and the personal use policy of this project under [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html), any commericial uses on this project by other than the owner [@KrystalZhang612](https://github.com/KrystalZhang612) or the authorized users and organizations will be subjected to copyright violation with sebsequent potential legal concerns.***
+## KrySpotify App Overview:
