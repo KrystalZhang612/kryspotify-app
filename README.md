@@ -21,3 +21,23 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
   <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%2012.PNG">
 </p>
 
+# Build
+[Method to Run & Test the Project Locally]()<br/> 
+[Prerequisites & Setups]()<br/> 
+[Synchronous Developing Notes]()<br/> 
+[Testing Result]()<br/> 
+[Tags and Topics]()
+# Contribution
+[Author]()
+
+
+
+
+
+
+
+
+
+
+
+
