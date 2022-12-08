@@ -29,15 +29,7 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 [Tags and Topics]()
 # Contribution
 [Author]()
-
-
-
-
-
-
-
-
-
-
-
+# Functionalities/Demo
+- The music player application with a modern responsive homepage, with an exceptional design where the user can choose a genre and get the top songs you can see top charts, and top artists on the right side a fully fledged Spotify, it also allows the user to go to the previous song and next song, repeat, shuffle forward and change volume.
+- The App also has a fully functional search and Pages where the user can explore the most popular songs in your country, trending artists and worldwide top charts, the user can click on a song title to navigate to a song's detail page where the user can see the song's official music video and the lyrics on the artist's name which shows you the songs related to that artist.
 
