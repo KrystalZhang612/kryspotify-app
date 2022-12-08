@@ -8,5 +8,16 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 ## KrySpotify App Overview:
 <p align = "center">
   <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%201.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%202.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%203.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%204.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%205.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%206.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%207.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%208.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%209.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%2010.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%2011.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/kryspotify%20app%20overview%2012.PNG">
 </p>
 
