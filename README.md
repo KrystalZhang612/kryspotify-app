@@ -61,7 +61,16 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 ### Start the webserver to test KrySpotify App by running: `npm dev run`at localhost:3000
 ### Terminate the server by `CONTROL+C`
 ### Have fun streaming music!!
-
+# 🛠️ Developing Languages, Tools, and Techniques Needed
+[JavaScript](https://www.javascript.com/)<br/> 
+[Vscode 1.73.1](https://code.visualstudio.com/updates/v1_73)<br/> 
+[React Native JS](https://reactjs.org/)<br/> 
+[RapidAPI Shazam Core API](https://rapidapi.com/tipsters/api/shazam-core/)<br/> 
+[RapidAPI Client Vscode Extension](https://marketplace.visualstudio.com/items?itemName=RapidAPI.vscode-rapidapi-client)<br/>
+[npm](https://www.npmjs.com/)<br/> 
+[Tailwind CSS IntelliSense Vscode Extension](https://tailwindcss.com/docs/editor-setup)<br/> 
+[Redux JS](https://redux.js.org/)<br/> 
+[IP Geolocation API](https://geo.ipify.org/)<br/> 
 
 
 
