@@ -71,6 +71,21 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 [Tailwind CSS IntelliSense Vscode Extension](https://tailwindcss.com/docs/editor-setup)<br/> 
 [Redux JS](https://redux.js.org/)<br/> 
 [IP Geolocation API](https://geo.ipify.org/)<br/> 
+[HTML5](https://en.wikipedia.org/wiki/HTML5)<br/>
+[CSS3](https://en.wikipedia.org/wiki/CSS)<br/>
+<div>
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title = "JAVASCRIPT" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg"  title = "VSCODE" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title = "REACT" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/images-attachments-collection/blob/main/rapidapi%20logo.png" title = "RAPIDAPI" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/npm/npm-original-wordmark.svg"  title = "NPM" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg" title = "TAILWIND" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title = "REDUX" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"  title = "HTML5" width = "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"  title = "CSS3" width = "60" height = "60"/>&nbsp; 
+</div>
+
+
 
 
 
