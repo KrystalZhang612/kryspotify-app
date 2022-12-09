@@ -22,7 +22,7 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 </p>
 
 # Build
-[Method to Run & Test the Project Locally]()<br/> 
+[Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
 [Prerequisites & Setups]()<br/> 
 [Synchronous Developing Notes]()<br/> 
 [Testing Result]()<br/> 
@@ -40,6 +40,27 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 | node js 16.15.1+  | ✅                 |
 | npm 5.6.1+        | :white_check_mark: |
 # Method to Run & Test the Project Locally
+### Download `git version 2.13.1 or higher`. Download git at https://git-scm.com/downloads
+### To check your version of git, run: `git --version`
+### Download `node 16.15.1 or higher`. Download node at  https://nodejs.org/en/download/
+### To check your version of node, run: `node --version`
+### Download `npm version 5.6.1 or higher` after installing node.
+### To check your version of npm, run: `npm --version`
+### Download  the entire project folder and open it with any IDE. 
+### Obtain a free API at https://rapidapi.com/tipsters/api/shazam-core
+### Replace `YOUR SHAZAM API` in shazamCore.js with the obtained API. 
+### Obtain a free GEO API at https://geo.ipify.org/docs
+### Replace `YOUR GEO API` in AroundYou.jsx with the obtained API. 
+### Navigate to the project folder in local CMD 
+### Install all necessary dependencies by running: `npm install`
+### `npm install --save-dev @types/react-redux`
+### `yarn add @types/react-redux --dev`
+### `npm install axios`
+### Install Vscode RapidAPI Client Vscode Extension
+### Send API GET Request at the extension until fetched to see `200 OK`.
+### Start the webserver to test KrySpotify App by running: `npm dev run`at localhost:3000
+### Terminate the server by `CONTROL+C`
+### Have fun streaming music!!
 
 
 
