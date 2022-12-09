@@ -39,7 +39,7 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 | git 2.13.1+       | :white_check_mark: |
 | node js 16.15.1+  | ✅                 |
 | npm 5.6.1+        | :white_check_mark: |
-
+# Method to Run & Test the Project Locally
 
 
 
