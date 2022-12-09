@@ -14,5 +14,4 @@ const PlayPause = ({ isPlaying, activeSong, song, handlePause, handlePlay }) => 
     onClick={handlePlay}
   />
 ));
-
 export default PlayPause;
