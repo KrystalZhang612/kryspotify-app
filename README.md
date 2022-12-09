@@ -423,6 +423,53 @@ useGetSongsBySearchQuery(searchTerm);
 ```
 [search function works 1.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20function%20works%201.PNG)<br/> 
 [search function works 2.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20function%20works%202.PNG)<br/>
+# Testing Result 
+<p align = "center">
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/genre%20titles%20showed.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/world%20chart%20api%20fetched%20okay.PNG">&nbsp; 
+  
+
+[loading songs when refreshing the page.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/loading%20songs%20when%20refreshing%20page.PNG)<br/>
+
+[song cards cover images fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/song%20cards%20cover%20images%20fetched.PNG)<br/>
+
+[song titles and subtitles artists showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/songs%20titles%20and%20subtitle%20artists%20showed.PNG)<br/>
+
+[play and pause hover buttons showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/play%20and%20pause%20hover%20buttons%20showed.PNG)<br/>
+
+[song playing-play/pause buttons worked!.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/song%20playing-play%3Apause%20buttons%20worked!.PNG)<br/>
+
+[sidebar sections are customized.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/side%20bar%20sections%20are%20customized.PNG)<br/>
+
+[minimized page is responsive and sidebar sections showed when clicking right-top 3 lines.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/minimized%20page%20is%20responsive%20and%20sidebar%20sections%20showed%20when%20clicking%20right-top%203%20lines.PNG)<br/>
+
+[top artists swiper showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20artists%20swiper%20showed.PNG)<br/>
+
+
+
+[top charts music showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20charts%20music%20showed.PNG)<br/>
+
+[top charts songs playing simultaneously on 3 platforms.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20charts%20songs%20playing%20simultaneously%20on%203%20platforms.PNG)<br/>
+
+[song lyrics and header cover image fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/song%20lyrics%20and%20header%20cover%20image%20fetched.PNG)<br/>
+
+[related songs swiper displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/related%20songs%20swiper%20displayed.PNG)<br/>
+
+[Around You section music are fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/Around%20You%20section%20songs%20are%20fetched.PNG)<br/>
+
+[Top Charts section is implemented.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/Top%20Charts%20section%20is%20implemented.PNG)<br/>
+
+[top artists and their cards fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20artists%20and%20their%20cards%20fetched.PNG)<br/>
+
+
+[search bar is customized.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20bar%20is%20customized.PNG)<br/>
+
+[music of different genres displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/music%20of%20different%20genres%20displayed.PNG)<br/>
+
+ [search function works 1.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20function%20works%201.PNG)<br/> 
+[search function works 2.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20function%20works%202.PNG)<br/>
+
+</p>
 
 
 
