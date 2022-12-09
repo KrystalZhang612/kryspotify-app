@@ -86,8 +86,7 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 </div>
 
 
-
-
+# Prerequisites & Setups
 
 
 
