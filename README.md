@@ -148,8 +148,281 @@ bg-opacity-70' : 'hidden'}`} >
       <img alt = "song_img" src = {song.images?.coverart}/>
 ```
 [song cards cover images fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/song%20cards%20cover%20images%20fetched.PNG)<br/>
-
-
+## ***Display titles and subtitles:***
+```JavaScript 
+  <p className="font-semibold text-lg text-white truncate">
+          <Link to={`/songs/${song?.key}`}>
+            {song.title}
+    
+</Link> </p>
+        <p className="text-sm truncate text-gray-300 mt-1">
+          <Link to={song.artists ?
+`/artists/${song?.artists[0]?.admid}` : 'top-artists'}>
+            {song.subtitle}
+```
+[song titles and subtitles artists showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/songs%20titles%20and%20subtitle%20artists%20showed.PNG)<br/>
+To make play and pause buttons show, in [PlayPause.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/PlayPause.jsx):
+```JavaScript 
+<FaPauseCircle
+    size = {35}
+    className = "text-gray-300"
+    onClick = {handlePause}
+/> ):(
+  <FaPlayCircle
+    size = {35}
+    className = "text-gray-300"
+    onClick = {handlePlay}
+/> ));
+```
+[play and pause hover buttons showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/play%20and%20pause%20hover%20buttons%20showed.PNG)<br/>
+## ***Play/Pause Functionalities:***
+To make play/pause buttons work, use dispatch state to trigger:
+```JavaScript 
+const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
+  const dispatch = useDispatch();
+  const handlePauseClick = () => {
+    dispatch(playPause(false));
+  };
+  const handlePlayClick = () => {
+    dispatch(setActiveSong({ song, data, i }));
+    dispatch(playPause(true));
+};
+```
+[song playing-play/pause buttons worked!.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/song%20playing-play%3Apause%20buttons%20worked!.PNG)<br/>
+We can also adjust the volume as the songs are playing.
+## ***Sidebar Customization:***
+In [SideBar.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/Sidebar.jsx):
+```JavaScript 
+{links.map((item) => (
+      <NavLink
+        key={item.mame}
+        to={item.to}
+        className="flex flex-row justify-start items-center my-8
+text-sm font-medium text-gray-400
+  
+hover:text-cyan-400"
+        onClick={() => handleClick && handleClick()}
+        <item.icon className="w-6 h-6 mr-2" />
+        {item.name}
+      </NavLink>
+    ))}
+```
+[sidebar sections are customized.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/side%20bar%20sections%20are%20customized.PNG)<br/>
+To make the sidebar responsive and right top toggles the left sidebar sections, import HiOutlineMenu and RiOutline methods with onClick:
+```JavaScript 
+<div className="absolute md:hidden block top-6 right-3">
+        {mobileMenuOpen ? (
+          <RiCloseLine className="w-6 h-6 text-white mr-2" onClick={()
+=> setMobileMenuOpen(false)} />
+        ) : <HiOutlineMenu className="w-6 h-6 text-white mr-2"
+onClick={() => setMobileMenuOpen(true)} />}
+</div>
+      <div className={`absolute top-0 h-screen w-2/3 bg-gradient-to-tl
+from-white/10
+        to-[#483d8b] backdrop-blur-lg z-10 p-6 md:hidden
+smooth-transition ${mobileMenuOpen ? 'left-0' :
+          '-left-full'}`}>
+        <img src={logo} alt="logo" className="w-full h-14
+object-contain" />
+        <NavLinks handleClick={() => setMobileMenuOpen(false)} />
+```
+Now when we minimized the webpage, its responsive and clicking right-top-three lines the left side-bar sections showed:<br/> 
+[minimized page is responsive and sidebar sections showed when clicking right-top 3 lines.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/minimized%20page%20is%20responsive%20and%20sidebar%20sections%20showed%20when%20clicking%20right-top%203%20lines.PNG)<br/>
+## ***Top Play Section Swiper Customization:***
+Customize top artists horizontal swiper in [TopPlay.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/TopPlay.jsx):
+```JavaScript 
+<Swiper
+          slidesPerView="auto"
+          spaceBetween={15}
+          freeMode
+          centeredSlides
+          centeredSlidesBounds
+          modules={[FreeMode]}
+          className="mt-4"
+        >
+          {topPlays?.map((song, i) => (
+            <SwiperSlide
+              key={song?.key}
+              style={{ width: '25%', height: 'auto' }}
+ 
+className="shadow-lg rounded-full animate-slideright"
+            >
+              <Link to={`/artists/${song?.artists[0].adamid}`}>
+                <img src={song?.images.background} alt="name"
+className="rounded-full w-full object-cover" />
+```
+[top artists swiper showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20artists%20swiper%20showed.PNG)<br/>
+Customize top charts music along with their corresponding artists:
+```JavaScript 
+const TopChartCard = ({ song, i }) => (
+  <div className="w-full flex flex-row items-center hover:bg-[#4c426e]
+py-2 p-4 rounded-lg cursor-pointer mb-2">
+    <h3 className="fot-bold text-base text-white mr-3">{i + 1}</h3>
+    <div className="flex-1 flex-row justify-between items-center">
+      <img className="w-20 h-20 rounded-lg"
+src={song?.images?.coverart} alt={song?.title} />
+      <div className="flex-1 flex-col justify-center mx-3">
+        <Link to={`/songs/${song.key}`}>
+          <p className="text-xl font-bold
+text-white">{song?.title}</p>
+        </Link>
+        <Link to={`/artists/${song?.artists[0].adamid}`}>
+          <p className="text-ase text-gray-300
+mt-1">{song?.subtitle}</p>
+        </Link>
+      </div>
+    </div>
+  </div>
+);
+```
+[top charts music showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20charts%20music%20showed.PNG)<br/>
+Now to enable the top chart songs to also play while clicking the play buttons:
+```JavaScript
+<PlayPause
+      isPlaying={isPlaying}
+      activeSong={activeSong}
+      song={song}
+      handlePause={handlePauseClick}
+      handlePlay={handlePlayClick}
+    />
+  const topPlays = data?.slice(0, 5);
+  const handlePauseClick = () => {
+    dispatch(playPause(false));
+  };
+  const handlePlayClick = (song, i) => {
+dispatch(setActiveSong({ song, data, i }));
+    dispatch(playPause(true));
+  };
+```
+Now if the user click on top chart songs play buttons, the songs are also playable, and meanwhile, the clicked songs are displaying as playing status simultaneously at 3 platforms: top charts, bottom bar, and the album covers:<br/>
+[top charts songs playing simultaneously on 3 platforms.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20charts%20songs%20playing%20simultaneously%20on%203%20platforms.PNG)<br/>
+## ***Song Details Page:***
+Fetch lyrics in [SongDetails.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/pages/SongDetails.jsx):
+```JavaScript 
+{songData?.sections[1].type === 'LYRICS'
+           ? songData?.sections[1].text.map((line, i) => (
+         <p className="text-gray-400 text-base my-1">{line}</p>
+             )) : <p className="text-gray-400 text-base my-1">Sorry,
+no lyrics found!</p>}
+```
+Fetch song album cover images in [DetailsHeader.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/DetailsHeader.jsx):
+```JavaScript 
+ const DetailsHeader = ({ artistId, artistData, songData }) => (
+  <div className="relative w-full flex flex-col">
+    <div className="w-full bg-gradient-to-1 from-transparent to-black
+sm:h-48 h-28" />
+    <div className="absolute inset-0 flex items-center">
+      <img
+        alt="art"
+        src={artistId ? artistData?.artists[artistId].attributes?.
+          artwork?.url.replace('{w}', '500').replace('{h}', '500')
+          : songData?.images?.coverart}
+```
+[song lyrics and header cover image fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/song%20lyrics%20and%20header%20cover%20image%20fetched.PNG)<br/>
+## ***Related Songs Swiper Section customization:***
+Fetch related songs to a specific song in [RelatedSong.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/RelatedSongs.jsx):
+```JavaScript 
+    <div className="mt-6 w-full flex flex-col">
+      {data?.map((song, i) => (
+        <SongBar
+          key={`${song.key}-${artistId}`}
+          song={song}
+          i={i}
+          artistId={artistId}
+          isPlaying={isPlaying}
+          activeSong={activeSong}
+          handlePauseClick={handlePauseClick}
+          handlePlayClick={handlePlayClick}
+```
+[related songs swiper displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/related%20songs%20swiper%20displayed.PNG)<br/>
+## ***Around You Section Customization:***
+Fetch country code and geography data from geo ipfy website, then fetch songs country codes in [AroundYou.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/pages/AroundYou.jsx) to display Around You section:
+```JavaScript 
+ return (
+        <div className="flex flex-col">
+            <h2 className="font-bold text-3xl text-white text-left
+mt-4 mb-10">Around You</h2>
+            <div className="flex flex-wrap sm:justify-start
+justify-center gap-8">
+                {data?.map((song, i) => (
+                    <SongCard
+                        key={song.key}
+                        song={song}
+                        isPlaying={isPlaying}
+                        activeSong={activeSong}
+                        data={data}
+i={i}
+```
+[Around You section music are fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/Around%20You%20section%20songs%20are%20fetched.PNG)<br/>
+## ***Top Charts Swiper:***
+Map top charts data in [TopCharts.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/pages/TopCharts.jsx):
+```JavaScript 
+<div className="flex flex-wrap sm:justify-start justify-center gap-8">
+                {data?.map((song, i) => (
+                    <SongCard
+                        key={song.key}
+                        song={song}
+                        isPlaying={isPlaying}
+                        activeSong={activeSong}
+                        data={data}
+i={i}
+```
+[Top Charts section is implemented.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/Top%20Charts%20section%20is%20implemented.PNG)<br/>
+Fetch top artists and their artists cards in [ArtistCards.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/ArtistCard.jsx):
+```JavaScript 
+const ArtistCard = ({ track }) => {
+  const navigate = useNavigate();
+  return (
+    <div className="flex flex-col w-[250px] p-4 bg-white/5
+bg-opacity-80
+    backdrop-blur-sm animate-slideup rounded-lg cursor-pointer">
+      <img alt="artist" src={track?.images?.coverart}
+        className="w-full h-56 rounded-lg" />
+      <p className="mt-4 font-semibold text-lg text-white truncate">
+        {track?.subtitle}</p>
+```
+[top artists and their cards fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/top%20artists%20and%20their%20cards%20fetched.PNG)<br/>
+## ***Search Functionality:***
+Customize Search bar in [SearchBar.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/Searchbar.jsx):
+```JavaScript 
+ <FiSearch className="w-5 h-5 ml-4" />
+      <input
+        name="search-field"
+        autoComplete="off"
+        id="search-field"
+        placeholder="Search"
+        type="search"
+        value=""
+        onChange={() => {}}
+        className = "flex-1 bg-transparent border-none outline-none
+placeholder-gray-500 text-base text-white p-4"
+```
+[search bar is customized.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20bar%20is%20customized.PNG)<br/>
+Fetch music by genre:
+```JavaScript 
+const dispatch = useDispatch();
+    const { activeSong, isPlaying, genreListId } = useSelector((state)
+=> state.player);
+    const { data, isFetching, error } =
+useGetSongsByGenreQuery(genreListId || 'POP');
+    if (isFetching) return <Loader title="Loading songs..." />;
+const genreTitle = genres.find(({ value }) => value === genreListId)?.title;
+```
+[music of different genres displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/music%20of%20different%20genres%20displayed.PNG)<br/>
+Implement search by queries in [Search.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/pages/Search.jsx):
+```JavaScript 
+const Search = () => {
+  const { searchTerm } = useParams();
+  const { activeSong, isPlaying } = useSelector((state) =>
+state.player);
+  const { data, isFetching, error } =
+useGetSongsBySearchQuery(searchTerm);
+  const songs = data?.tracks?.hits?.map((song) => song.track);
+  if (isFetching) return <Loader title="Loading top charts..." />;
+  if (error) return <Error />;
+```
+[search function works 1.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20function%20works%201.PNG)<br/> 
+[search function works 2.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/search%20function%20works%202.PNG)<br/>
 
 
 
