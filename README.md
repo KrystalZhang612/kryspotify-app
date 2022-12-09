@@ -116,6 +116,27 @@ rounded-lg outline-none sm:mt-0 mt-5">
                     {genres.map((genre) => <option key={genre.value}
 value={genre.value}>{genre.title}</option>)}
 ```
+[genre titles showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/genre%20titles%20showed.PNG)<br/>
+## ***Rapid API Music Fetching:***
+Fetch world charts by sending a new request in RapidAPI extension, 200 if the API is fetched.<br/>
+[world chart api fetched okay.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/world%20chart%20api%20fetched%20okay.PNG)<br/>
+## ***Loader Components:***
+In [Loader.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/Loader.jsx):
+```JavaScript 
+const Loader = ({ title }) => (
+  <div className = "w-full flex justify-center items-center flex-col">
+    <img src = {loader} alt = "loader" className = "w-32 h-32
+object-contain" />
+    <h1 className = "font-bold text-2xl text-white mt-2">{title ||
+"Loading..."}</h1>
+  </div>
+);
+```
+[loading songs when refreshing the page.PNG](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/testing-result-krySpotify-App/loading%20songs%20when%20refreshing%20page.PNG)<br/>
+## ***Song Card Components:***
+To fetch songs album covers, in [SongCard.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/components/SongCard.jsx):
+
+
 
 
 
