@@ -24,7 +24,7 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 # Build
 [Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/README.md#prerequisites--setups)<br/> 
-[Synchronous Developing Notes]()<br/> 
+[Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/README.md#synchronous-developing-notes)<br/> 
 [Testing Result]()<br/> 
 [Tags and Topics]()
 # Contribution
@@ -101,6 +101,22 @@ yarn add @types/react-redux --dev
 Install axios for axios requirement:<br/> 
 `npm install axios`
 # Synchronous Developing Notes
+## ***Discover Section Creation:***
+Map the genre titles as a list in [Discover.jsx](https://github.com/KrystalZhang612/KrystalZhang-KrySpotify-App/blob/main/src/pages/Discover.jsx):
+```JavaScript 
+<div className="w-full flex justify-between items-center sm:flex-row
+flex-col mt-4 mb-10">
+                <h2 className="font-bold text-3xl text-white
+text-left">Discover{genreTitle}</h2>
+                <select
+                    onChange={() => { }}
+                    value=""
+                    className="bg-black text-gray-300 p-3 text-sm
+rounded-lg outline-none sm:mt-0 mt-5">
+                    {genres.map((genre) => <option key={genre.value}
+value={genre.value}>{genre.title}</option>)}
+```
+
 
 
 
