@@ -100,9 +100,7 @@ yarn add @types/react-redux --dev
 ```
 Install axios for axios requirement:<br/> 
 `npm install axios`
-
-
-
+# Synchronous Developing Notes
 
 
 
