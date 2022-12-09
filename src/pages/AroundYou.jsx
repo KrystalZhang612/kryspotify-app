@@ -44,4 +44,3 @@ const AroundYou = () => {
     );
 };
 export default AroundYou;
-
