@@ -13,7 +13,7 @@ const AroundYou = () => {
     console.log(country);
 
     useEffect(() => {
-        axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_TBiV5K6uIbhFEL0bYuxfWqVSTE1Oc')
+        axios.get('https://geo.ipify.org/api/v2/country?apiKey=YOUR GEO API')
             .then((res) => setCountry(res?.data?.location?.country))
             .catch((err) => console.log(err))
             .finally(() => setLoading(false));
