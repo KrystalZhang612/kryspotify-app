@@ -20,5 +20,4 @@ const RelatedSongs = ({ data, isPlaying, activeSong, handlePauseClick, handlePla
     </div>
   </div>
 );
-
 export default RelatedSongs;
