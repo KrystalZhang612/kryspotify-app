@@ -450,6 +450,15 @@ useGetSongsBySearchQuery(searchTerm);
 
 # Tags and Topics
 full-stack, responsive, spotify-2.0, music-streaming-app, javascript, vscode, react-native-js, rapid-api, npm, tailwind-css, redux-js-toolkit, ip-geo-api, html5, css3. 
+
+# NOTE: 
+App Netlify deployment process:<br/> 
+Vscode-> Terminal -> `npm run build `<br/> 
+Right click the generated dist folder Reveal in files explorer/finder<br/> 
+Netlify-> overview-> Sites-> Drag dist folder to upload to deploy <br/> 
+Once done deploying, options-> edit site name -> customize site name <br/> 
+Browse the deployed public sites anytime.
+
 # Author
 Krystal Zhang
 https://github.com/KrystalZhang612<hr>
