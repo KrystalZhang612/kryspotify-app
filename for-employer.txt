@@ -1,4 +1,3 @@
-##Dear Employer </br/>
-if you are 
-
-##
+Dear employer, 
+If you are redirected to this link, it indicates that the demo of the KrySpotify is not functioning properly since the API of Spotify became invalid in June 2023, 
+I sincerely do apologize for the API becoming invalid, please review the GitHub deployment page of this app. 
