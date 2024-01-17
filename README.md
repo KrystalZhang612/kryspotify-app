@@ -47,8 +47,42 @@ Spotify 2.0. My replica to one of the world’s most popular music streaming app
 ### Download `npm version 5.6.1 or higher` after installing node.
 ### To check your version of npm, run: `npm --version`
 ### Download  the entire project folder and open it with any IDE. 
-### Obtain a free API at https://rapidapi.com/tipsters/api/shazam-core
-### Replace `YOUR SHAZAM API` in shazamCore.js with the obtained API. 
+Create a new file named `shazamCore.js` in  `src/redux/services/`<br/>
+Obtain a free API at https://rapidapi.com/tipsters/api/shazam-core<br/> 
+Replace `YOUR SHAZAM API` in `shazamCore.js` with the obtained API:
+```javascript
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+
+export const shazamCoreApi = createApi({
+    reducerPath: 'shazamCoreApi',
+    baseQuery: fetchBaseQuery({
+        baseUrl: 'https://shazam-core.p.rapidapi.com/v1',
+        prepareHeaders: (headers) => {
+            headers.set('X-RapidAPI-Key', 'YOUR SHAZAM API');
+            return headers;
+        },
+    }),
+    endpoints: (builder) => ({
+        getTopCharts: builder.query({ query: () => '/charts/world' }),
+        getSongsByGenre: builder.query({ query: (genre) => `/charts/genre-world?genre_code=${genre}` }),
+        getSongsByCountry: builder.query({ query: (countryCode) => `/charts/country?country_code=${countryCode}` }),
+        getArtistDetails: builder.query({ query: (artistId) => `/artists/details?artist_id=${artistId}` }),
+        getSongDetails: builder.query({ query: ({ songid }) => `/tracks/details?track_id=${songid}` }),
+        getSongRelated: builder.query({ query: ({ songid }) => `/tracks/related?track_id=${songid}` }),
+        getSongsBySearch: builder.query({ query: (searchTerm) => `/search/multi?search_type=SONGS_ARTISTS&query=${searchTerm}` }),
+    }),
+});
+
+export const {
+    useGetTopChartsQuery,
+    useGetSongsByGenreQuery, 
+    useGetSongDetailsQuery,
+    useGetSongRelatedQuery,
+    useGetArtistDetailsQuery,
+    useGetSongsByCountryQuery, 
+    useGetSongsBySearchQuery, 
+} = shazamCoreApi; 
+```
 ### Obtain a free GEO API at https://geo.ipify.org/docs
 ### Replace `YOUR GEO API` in AroundYou.jsx with the obtained API. 
 ### Navigate to the project folder in local CMD 
